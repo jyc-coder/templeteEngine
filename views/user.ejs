@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>템플릿 엔진 실습</title>
+  </head>
+
+  <body>
+    <h1>안녕하세요!</h1>
+    <p><b>이름:</b> <%= user.name %></p>
+    <p><b>이메일:</b> <%= user.email %></p>
+    <p><b>스택:</b> <%= user.stack %></p>
+    <u><b>취미</b></u>
+    <% user.hobby.forEach(item =>{ %>
+    <li><%= item %></li>
+    <% })%>
+  </body>
+</html>
